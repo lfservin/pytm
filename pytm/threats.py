@@ -55,7 +55,7 @@ Threats = {
     "condition": "target.providesConfidentiality is False and target.providesIntegrity is False and target.authenticatesSource is True",
   },
   "IN01": {
-    "description": "Potential SQL Injection ![cwe](https://cwe.mitre.org/data/definitions/89.html \"Vulnerability\")",
+    "description": "Potential SQL injection [Vulnerability](https://cwe.mitre.org/data/definitions/89.html)",
     "source": Process,
     "target": Datastore,
     "condition": "target.isSQL is True",
@@ -73,7 +73,7 @@ Threats = {
     "condition": "target.dataType == 'JSON'",
   },
   "IN04": {
-    "description": "Cross Site Scripting (CWE 79)",
+    "description": "Cross Site Scripting [Vulnerability](https://cwe.mitre.org/data/definitions/79.html)",
     "source": (Process, Datastore, Element),
     "target": Server,
     "condition": "target.sanitizesInput is False and target.encodesOutput is False",
@@ -103,7 +103,7 @@ Threats = {
     "condition": "target.tracksExecutionFlow is False or target.hasAccessControl is False",
   },
   "OT01": {
-    "description": "Cross Site Request Forgery (352)",
+    "description": "Cross Site Request Forgery [Vulnerability](https://cwe.mitre.org/data/definitions/352.html)",
     "source": Element,
     "target": (Process, Server),
     "condition": "target.implementsCSRFToken is False",
