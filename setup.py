@@ -6,7 +6,7 @@ setuptools.setup(
     name='pytm',
     version='1.21',
     packages=['pytm'],
-    summary='A Python-based framework for threat modeling.',
+    description='A Python-based framework for threat modeling.',
     long_description=open('README.md').read(),
     license='MIT License',
     url="https://github.com/izar/pytm",
